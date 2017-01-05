@@ -1,17 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/**
- * This script deletes a platform once it is far enough away from the screen. 
- */
 public class DeletePlatform : MonoBehaviour {
 
     public float offset = 10000f;
-
     private bool offscreen;
     private float offscreenX;
     public Rigidbody2D myBody;
-
     public float posX;
     public float dirX;
 
@@ -23,18 +18,18 @@ public class DeletePlatform : MonoBehaviour {
         myBody = GetComponent<Rigidbody2D>();
     }
 
-	/**
+    /**
      * Start
      */
-	void Start ()
+    void Start ()
     {
         offscreenX = (Screen.width / PixelPerfectCamera.pixelsToUnits) / 2 + offset;
-	}
+    }
 	
-	/**
+    /**
      * Updates the game. 
      */
-	void Update ()
+    void Update ()
     {
         posX = transform.position.x;
         dirX = myBody.velocity.x;
@@ -45,10 +40,12 @@ public class DeletePlatform : MonoBehaviour {
         {
             OutOfBounds();
         }
-	}
+    }
 
     /**
      * This method checks to see if the object is offscreen. 
+     *
+     * @return Boolean whether or not platform is offscreen. 
      */
     public bool checkOffset()
     {
