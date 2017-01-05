@@ -41,6 +41,7 @@ public class GameOver : MonoBehaviour {
 
     /**
      * This method checks to see if the pig is offscreen. 
+     * 
      * @return bool Whether ot not the pig is offscreen. 
      */
      public bool isOffscreen()

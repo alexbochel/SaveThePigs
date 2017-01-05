@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This class handles the brown pig's movement. 
+ * 
+ * @version 12.18.2016
+ * @author Alexander James Bochel
+ */
 public class PigMovement : MonoBehaviour {
 
     // This field controls the players jump speed. 
