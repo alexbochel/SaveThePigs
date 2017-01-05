@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This class handles the spawning of new platforms (this will soon be replaced with pooling).
+ * 
+ * @version 12.20.2016
+ * @author Alexander James Bochel
+ */
 public class PlatformGenerator : MonoBehaviour {
 
     // Variable field for the random number that will determine platform spacing. 

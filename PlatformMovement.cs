@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This class handles the movement of the platforms. 
+ * 
+ * @version 12.19.2016
+ * @author Alexander James Bochel
+ */
 public class PlatformMovement : MonoBehaviour {
 
     // Variable for the platform moveSpeed. 
