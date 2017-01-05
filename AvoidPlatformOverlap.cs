@@ -12,9 +12,9 @@ public class AvoidPlatformOverlap : MonoBehaviour {
      */
 	void Update () {
 	    if (checkOverlap())
-        {
-            relocate();
-        }
+            {
+            	relocate();
+            }
 	}
 
     /**
