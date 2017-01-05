@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * This class manages the saving of high and latest scores. 
+ * 
+ * @version 1.2.2016
+ * @author Alexander James Bochel
+ */
 public class ScoreManager : MonoBehaviour {
 
     // Score text and count
