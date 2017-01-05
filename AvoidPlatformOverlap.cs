@@ -7,7 +7,7 @@ public class AvoidPlatformOverlap : MonoBehaviour {
     public BoxCollider2D brownCollider;
     public GameObject pinkPlatform;
 	
-	/**
+    /**
      * Update
      */
 	void Update () {
