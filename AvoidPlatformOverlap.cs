@@ -20,6 +20,7 @@ public class AvoidPlatformOverlap : MonoBehaviour {
 
     /**
      * This method checks to see if a brown and pink platform are overlapping. 
+     * 
      * @return Boolean whether or not platforms are in contact. 
      */
      public bool checkOverlap()
