@@ -10,12 +10,13 @@ public class AvoidPlatformOverlap : MonoBehaviour {
     /**
      * Update
      */
-	void Update () {
-	    if (checkOverlap())
-            {
-            	relocate();
-            }
-	}
+     void Update () 
+     {    
+         if (checkOverlap())
+         {
+            relocate();
+         }
+     }
 
     /**
      * This method checks to see if a brown and pink platform are overlapping. 
