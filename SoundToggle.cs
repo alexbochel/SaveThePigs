@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * This class allows for the game sound to be turned on and off (unfinished). 
+ * 
+ * @version 1.5.2016
+ * @author Alexander James Bochel
+ */
 public class SoundToggle : MonoBehaviour {
 
 	/**
