@@ -47,7 +47,7 @@ public class GameOver : MonoBehaviour {
      public bool isOffscreen()
     {
         // Checks for yPos below or behind screen. 
-        if (transform.position.y < -80 || transform.position.x < -160)
+        if (transform.position.y < -80)
         {
             return true;
         }

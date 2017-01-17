@@ -4,7 +4,7 @@ using System.Collections;
 /**
  * This class handles the pink pig's movement. 
  * 
- * @version 12.18.2016
+ * @version 1.10.2017
  * @author Alexander James Bochel
  */
 public class PinkPigMovement : MonoBehaviour
@@ -55,7 +55,6 @@ public class PinkPigMovement : MonoBehaviour
         if (checkCanJump())
         {
             myBody.velocity = new Vector2(myBody.velocity.x, jumpSpeed);
-            scoreTracker.scoreCount++;
         }
     }
 

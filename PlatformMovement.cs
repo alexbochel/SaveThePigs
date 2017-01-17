@@ -35,7 +35,7 @@ public class PlatformMovement : MonoBehaviour {
     /**
      * This method speeds up the platforms as the score goes up.
      */
-     public void speedUp()
+    public void speedUp()
     {
         if (currentScore.scoreCount > 25f)
         {
@@ -62,4 +62,5 @@ public class PlatformMovement : MonoBehaviour {
             platSpeed = -160;
         }
     }
+
 }

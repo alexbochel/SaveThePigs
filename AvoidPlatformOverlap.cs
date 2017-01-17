@@ -7,21 +7,18 @@ public class AvoidPlatformOverlap : MonoBehaviour {
     public BoxCollider2D brownCollider;
     public GameObject pinkPlatform;
 	
-    /**
+	/**
      * Update
      */
-     void Update () 
-     {    
-         if (checkOverlap())
-         {
+	void Update () {
+	    if (checkOverlap())
+        {
             relocate();
-         }
-     }
+        }
+	}
 
     /**
      * This method checks to see if a brown and pink platform are overlapping. 
-     * 
-     * @return Boolean whether or not platforms are in contact. 
      */
      public bool checkOverlap()
     {

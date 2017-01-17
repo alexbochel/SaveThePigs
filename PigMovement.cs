@@ -4,7 +4,7 @@ using System.Collections;
 /**
  * This class handles the brown pig's movement. 
  * 
- * @version 12.18.2016
+ * @version 1.10.2017
  * @author Alexander James Bochel
  */
 public class PigMovement : MonoBehaviour {
@@ -43,7 +43,7 @@ public class PigMovement : MonoBehaviour {
         myBody.velocity = new Vector2(myBody.velocity.x, myBody.velocity.y);
 
         jump();
-	}
+    }
 
     /*
      * This changes the jumpSpeed to allow the player to jump.  

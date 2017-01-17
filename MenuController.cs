@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.GameCenter;
 
 /**
  * This class allows for the changing of scenes. 
@@ -19,6 +20,5 @@ public class MenuController : MonoBehaviour
     public void loadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-    }
-	
+    }	
 }

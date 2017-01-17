@@ -4,7 +4,7 @@ using System.Collections;
 /**
  * This class handles the spawning of new platforms (this will soon be replaced with pooling).
  * 
- * @version 12.20.2016
+ * @version 1.10.2017
  * @author Alexander James Bochel
  */
 public class PlatformGenerator : MonoBehaviour {
@@ -13,8 +13,9 @@ public class PlatformGenerator : MonoBehaviour {
     float waitingTime;
     float timer;
 
-    // Variable for yPosition of next platform. 
+    // Variables for Position of next platform. 
     float yPos;
+    float xPos;
 
     // Variable for the next platform spawned by current platform. 
     public GameObject newPlatform;
@@ -26,7 +27,7 @@ public class PlatformGenerator : MonoBehaviour {
      * Use this for initialization
      */
 	void Start () {
-        waitingTime = Random.Range(0.9f, 1.3f);
+        waitingTime = Random.Range(1f, 1.35f);
         boxCollider = GetComponent<BoxCollider2D>();
 	}
 	
@@ -52,9 +53,10 @@ public class PlatformGenerator : MonoBehaviour {
     {
         // Generate relatively random number for y position of new platform. 
         yPos = Random.Range(transform.position.y - 20, transform.position.y + 20);
+        xPos = 235;
 
         // Create the new platform at given y coordinate. 
-        Instantiate(this, new Vector2(Screen.width / 5, yPos), Quaternion.identity);
+        Instantiate(this, new Vector2(xPos, yPos), Quaternion.identity);
     }
 	 
     /**
